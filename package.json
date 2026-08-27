@@ -1,0 +1,31 @@
+{
+  "name": "syncplay",
+  "version": "1.0.0",
+  "description": "Synchronized local movie playback across multiple devices on the same local network",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "node server/index.js",
+    "start": "node server/index.js",
+    "build": "npm --prefix client run build",
+    "vercel-build": "npm --prefix client install && npm --prefix client run build",
+    "server": "node server/index.js",
+    "client": "npm --prefix client run dev",
+    "install:all": "npm install && npm --prefix client install"
+  },
+  "keywords": [
+    "syncplay",
+    "movie-sync",
+    "local-network",
+    "webrtc",
+    "websocket",
+    "video-sync"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "ws": "^8.17.1"
+  },
+  "devDependencies": {}
+}
